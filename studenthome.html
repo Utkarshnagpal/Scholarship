@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<title> Home </title>
+<style type="text/css">
+*{
+margin :0;
+padding :0;
+}
+  
+  body{
+  font-family:calibri, sans-serif;
+  }
+  
+  bg-wrap{
+  position: fixed;
+  z-index: -1000;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  top: 0;
+  left:0;
+  }
+  
+  #video-bg-elem {
+  position :absolute;
+  top:0;
+  left:0;
+  min-height:100%;
+  min-width:100%;
+  }
+  
+  .content
+  {
+  position:absolute;
+  width:100%;
+  min-height:116%;
+  z-index: 1000;
+  background-color:rgba(0,0,0,.5);
+  }
+  
+  .content h1
+  {
+  text-align: left;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+padding-top:5%;
+  padding-left:16%;
+  margin-bottom: 180px;
+  }
+  
+  .content h2
+  {
+  position: absolute;
+  top:35%;
+  left:23%;
+  font-size: 50px;
+  font-weight: 3000;
+  color: #fff;
+  padding-left:1%;
+  
+  }
+  
+  .content button
+  {
+  position: absolute;
+  bottom: 65%;
+  right: 64%;
+  transform: translate(-50%, -50%);
+  }
+  
+    .content #b2
+  {
+  position: absolute;
+  top: 5%;
+  left: 94%;
+  transform: translate(-50%, -50%);
+  }
+  
+  
+
+  .content button 
+ {
+background: #FFA500;
+color: #000;
+width: 120px;
+height: 38px;
+border: 1px solid #338033;
+font-size: 18px;
+border-radius: 4px;
+}
+
+ 
+ .content #b3
+{
+background: #FFA500;
+position: absolute;
+color: #000;
+width: 200px;
+height: 52px;
+border: 2px solid #338033;
+font-size: 20px;
+border-radius: 5px;
+top:5%;
+right:45%;
+}
+ .content #b5
+{
+background: #FFA500;
+position: absolute;
+color: #000;
+width: 200px;
+height: 52px;
+border: 2px solid #338033;
+font-size: 20px;
+border-radius: 5px;
+top:5%;
+right:25%;
+}
+
+video{
+width: 100%;
+}
+
+.icon
+{
+position:absolute;
+top:8%;
+left:4%;
+}
+
+
+</style>
+
+</head>
+
+<div class="bg-wrap">
+<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+<source src="university.mp4" type="video/mp4">
+video not supported 
+</video>
+</div>
+
+<div class="content">
+<h1> STATE SCHOLARSHIP PROGRAM </h1>
+<h2>Paying for school just got easier.</h2>
+
+<button style="margin-top:350px;margin-left:-450px"id="b3" type="button" >Final List</button>
+<a href="http://localhost:8086/ScholarshipProject/editdetails.jsp"><button style="margin-top:350px;margin-left:-450px"id="b5" type="submit" >Edit Details </button></a>
+<form method="post" action="studentlogout">
+<button id="b2"  type="submit">Logout</button>
+</form>
+</div>
+
+
+
+<div class="icon">
+<img src="sch3.png" alt="icon" width="100" height="100" border="0">
+</div>
+
+</html>
